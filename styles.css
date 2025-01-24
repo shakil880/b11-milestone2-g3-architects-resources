@@ -37,7 +37,7 @@ header {
 .nav-links {
   gap: 40px;
   color: rgb(66, 66, 66);
-  background-color: red;
+  /* background-color: red; */
 }
 
 
