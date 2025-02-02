@@ -6,33 +6,54 @@
   <link rel="stylesheet" href="styles.css">
   <title>G3 Architect</title>
 </head>
-<body>
-  <header>
-    <nav class="navbar flex container">
-      <h1>G3 Architects</h1>
-      <ul class="nav-links flex">
+<body class="work-sans">
+  <header class="container">
+    <nav class="navbar flex-row">
+      <h1 class="nav-header">G3 Architects</h1>
+      <ul class="nav-links flex-row">
         <li><a href="">Home</a></li>
         <li><a href="">About</a></li>
         <li><a href="">Contact</a></li>
         <li><a href="">Login</a></li>
         <li><a href="">Register</a></li>
-        <li><a href="">R</a></li>
-        <li><a href="">R</a></li>
-        <li><a href="">R</a></li>
-        <li><a href="">R</a></li>
-        <li><a href="">R</a></li>
-        <li><a href="">R</a></li>
       </ul>
     </nav>
-    <div class="banner container flex-clmn">
-      <h1>Brand New Group of Architects</h1>
-      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+    <div class="banner flex-col">
+      <h1 class="banner-header">Brand New <br> Group of Architects</h1>
+      <p  class="banner-p">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
         some form, by injected humour, or randomised words which don't look even.
       </p>
-      <button class="explore-btn">Explore More</button>
+      <button class="primary-btn">Explore More</button>
       <img src="images/banner.png" alt="">
     </div>
   </header>
+
+  <main>
+    <!-- features -->
+    <section id="features" class="container">
+      <div class="feature-cards" style="background-color: green">
+        <img src="./images/team1.png" alt="">
+        <img src="./images/team2.png" alt="">
+        <img src="./images/team3.png" alt="">
+        <img src="./images/team4.png" alt="">
+      </div>
+
+      
+
+      
+      <div class="feature-desc flex-col" style="background-color: red;">
+        <h1>Quick list of Our <br> Features</h1>
+        <p>There are many variations of passages of Lorem Ipsum available,
+          but the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even
+        
+        </p>
+        
+        <button class="primary-btn">Explore Now</button>
+      </div>
+
+    </section>
+  </main>
 
 </body>
 </html>
