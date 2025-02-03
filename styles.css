@@ -105,6 +105,10 @@ header {
   gap: 1rem;
 }
 
+.horizontal {
+  display: none;
+}
+
 .banner {
   height: 120vh;
 
@@ -230,6 +234,7 @@ header {
 
   .banner {
     justify-content: center;
+    gap: 3rem;
   }
 
   #features {
@@ -274,6 +279,10 @@ header {
 
   #love-features {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .horizontal {
+    display: block;
   }
 
 
