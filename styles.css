@@ -31,6 +31,35 @@ html {
   border-radius: 5px;
   border: none;
   color: white;
+
+  /* margin-top: -200px; */
+}
+
+.secondary-btn {
+  /* width: min(20vh, auto);
+  height: min(15vh, auto); */
+
+  width: min(25vh, 100%);
+  height: min(15vh, 100%);
+
+  background-color: #FF900E;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  margin-top: -1000px;
+  margin-left: -100px;
+
+}
+
+.secondary-btn p{
+  font-size: 3rem;
+  font-weight: bold;
+
+}
+
+
+.text-gray {
+  color: #727272;
 }
 
 
@@ -53,6 +82,10 @@ a {
 .flex-col {
   display: flex;
   flex-direction: column;
+}
+
+header {
+  background-color: rgba(255, 144, 14, 0.1);
 }
 
 .navbar {
@@ -156,7 +189,7 @@ a {
   padding: 20px 0;
 
   text-align: left;
-  border-left: 3px solid #FF900E;
+  border-left: 5px solid #FF900E;
   padding-left: 20px;
 }
 
@@ -165,17 +198,31 @@ a {
 }
 
 .love-desc-cards {
-  margin-left: 15px;
+  margin-left: 0px;
 }
 
 .love-desc-cards > div {
-  border: 1px solid black;
-  padding: 10px 0;
+  /* border: 1px solid black; */
+  padding: 10px 10px;
   margin-bottom: 10px;
+  line-height: 200%;
+
+
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  background: rgb(255, 255, 255);
+}
+
+.love-desc-p {
+  line-height: 200%;
 }
 
 
 @media (max-width: 576px) {
+
+  .container {
+    width: 95%;
+  }
 
   html {
     font-size: 50%;
@@ -186,9 +233,14 @@ a {
   }
 
   #features {
-    grid-template-columns: repeat(1, 1fr);
-    /* align-items: center; */
-    justify-items: center;
+    /* grid-template-columns: repeat(1, 1fr);
+    justify-items: center; */
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+
+    
+
   }
 
   .feature-cards {
@@ -200,15 +252,33 @@ a {
     font-size: 4rem;
   }
 
+  .horizontal {
+    border: 1px, dotted rgb(116, 105, 105);
+  }
+
   .nav-links {
     display: none;
   }
 
   .banner-header {
-    font-size: 6re;
+    font-size: 2.5rem;
   }
 
   .banner {
   height: auto;
+  }
+
+  .primary-btn {
+    display: none;
+  }
+
+  #love-features {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+
+
+  .secondary-btn {
+    display: none
   }
 }
